@@ -1,0 +1,121 @@
+.abouttxt {
+  text-align: justify;
+  padding: 20px;
+}
+
+.ww {
+  padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 20px; /* Adjust the gap between the columns */
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the grid horizontally */
+  text-align: center;
+}
+
+.ul-projects {
+  list-style-type: disc; /* Use 'disc' for bullet points */
+  padding: 10px;
+}
+
+.ul-projects li {
+  text-align: left; /* Align the list items to the left */
+  margin: 8px 0; /* Add some spacing between list items */
+  line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.right-image {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain image aspect ratio */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Display only one column for smaller screens */
+  }
+  .ul-projects {
+    list-style-type: disc; /* Add bullets for list items on smaller screens */
+  }
+}
+
+/* styles.css */
+
+/* Unique section styling */
+.my-portfolio-section {
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+/* Unique heading styling */
+.my-portfolio-section h2 {
+  color: #4299e1;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Unique list styling */
+.my-portfolio-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+/* Unique sub-list styling */
+.my-portfolio-section ul ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Unique italics styling for the closing statement */
+.my-portfolio-section p {
+  text-align: center;
+  font-style: italic;
+  color: #6b7280;
+}
+
+.about---img {
+  margin-left: 90px;
+}
+
+/* Mobile-first responsive design */
+.skills__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__content {
+  margin-bottom: 20px;
+}
+
+.skills__image {
+  order: 1; /* Move the image below the content in mobile view */
+}
+
+/* Adjust as needed for larger screens */
+@media (min-width: 768px) {
+  .skills__container {
+    flex-direction: row;
+  }
+
+  .skills__content {
+    flex: 2;
+    margin-right: 40px;
+    margin-bottom: 0; /* Reset margin for larger screens */
+  }
+
+  .skills__image {
+    flex: 1;
+    order: 2; /* Move the image to the right in larger screens */
+  }
+}
